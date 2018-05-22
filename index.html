@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simon</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/simon.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="board">
+          <div class="row">
+            <div id="" class="col-6 green paddle"></div>
+            <div class="col-6 red paddle"></div>
+          </div>
+          <div class="row">
+            <div class="col-6 orange paddle"></div>
+            <div class="col-6 blue paddle"></div>
+          </div>
+          <div class="col-6 center">
+            <h1>Simon</h1>
+            <button id="startBtn" class="btn btn-primary" onclick="start()">START</button>      
+            <button id="strictBtn" class="btn btn-primary" onclick="setStrict()">Strict</button>
+            <div id="steps">
+              <h4>Steps</h4>  
+              <h4 id="count">0</h4>
+            </div>
+            <h1 id="banner"></h1>
+          </div>
+        </div>
+      </div> 
+</body>
+</html>

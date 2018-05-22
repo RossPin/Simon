@@ -1,0 +1,175 @@
+body {
+  background-color: rgb(255,255,240);
+}
+.board {  
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.paddle {
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  height: 50vw;
+}
+
+.red {
+  border: 1.5vw solid black;
+  border-top: 3vw solid black;
+  border-right: 3vw solid black;
+  border-radius: 0 300px 0 0;
+  background-color: rgb(180,35,0);
+}
+
+.redOn {
+  background-color: rgb(255,75,25);
+}
+.green {
+  border: 1.5vw solid black;
+  border-left: 3vw solid black;
+  border-top: 3vw solid black;
+  border-radius: 300px 0 0 0;
+  background-color: rgb(45,180,0);
+}
+
+.greenOn {
+  background-color: rgb(160,255,130);  
+}
+
+.blue {
+  border: 1.5vw solid black;
+  border-right: 3vw solid black;
+  border-bottom: 3vw solid black;
+  border-radius: 0 0 300px 0;
+  background-color: rgb(0,30,125);  
+}
+
+.blueOn {
+  background-color: rgb(100,200,255);  
+}
+
+.orange {
+  border: 1.5vw solid black;
+  border-left: 3vw solid black;
+  border-bottom: 3vw solid black;
+  border-radius: 0 0 0 300px;
+  background-color: rgb(200,150,0);
+}
+
+.orangeOn {
+  background-color: rgb(255,225,75);  
+}
+
+.center{
+  z-index: 2;  
+  background-color: rgb(245,245,255);
+  margin-top: -75vw;
+  margin-left: 25vw;
+  height: 50vw;
+  width: 50vw;
+  border: 3vw solid black;
+  border-radius: 150px;
+  text-align: center;
+  padding-top: 5vw;
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.btn {
+  width: 14vw;  
+  height: 6vw;
+  text-align: center;
+  padding: 0;
+}
+
+h4, .btn {
+  font-size: 3.5vw;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+#steps {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 13vw;
+  max-width: 80px;
+  background-color: rgb(255,255,240);
+  margin-top: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fail {
+  background-color: rgb(255,0,0);
+}
+
+.succeed {
+  background-color: rgb(0,255,0);
+}
+
+.pink {
+  background-color: pink;
+}
+
+@media only screen and (min-height: 600px) {
+
+  .board {
+    margin-top: calc((100vh - 600px) / 2);
+  }
+}
+
+@media only screen and (min-width: 600px) {  
+  .paddle {
+  height: 300px;
+}
+  .center {
+  margin-top: -450px;
+  margin-left: 150px;
+  height: 300px;
+  width: 300px;
+  padding-top: 30px;
+  border: 20px solid black;
+  }
+  h1 {
+  font-size: 36px;
+}
+  h4, .btn {
+  font-size: 18px;
+}
+  .btn {
+  width: 80px;  
+  height: 36px;
+} 
+  #steps {
+    margin-top: 10px;
+  }
+  .red {
+  border: 10px solid black;
+  border-top: 20px solid black;
+  border-right: 20px solid black;  
+}
+  
+.green {
+  border: 10px solid black;
+  border-left: 20px solid black;
+  border-top: 20px solid black;  
+}
+
+.blue {
+  border: 10px solid black;
+  border-right: 20px solid black;
+  border-bottom: 20px solid black;  
+}
+
+.orange {
+  border: 10px solid black;
+  border-left: 20px solid black;
+  border-bottom: 20px solid black;  
+}
+}
+
