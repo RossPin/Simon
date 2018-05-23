@@ -37,7 +37,7 @@ function playSequence(i) {
     return;
   }  
   $('.'+sequence[i]).addClass(sequence[i]+'On');  
-  sound = new Audio(getSound(sequence[i]));
+  sound = new Audio(getSound(sequence[i]));  
   sound.play();
   setTimeout(function(){
     $('.'+sequence[i]).removeClass(sequence[i]+'On');
@@ -47,7 +47,7 @@ function playSequence(i) {
   }, flashTime);
 }
 
-function playerTurn(){
+function playerTurn(){  
   startListeners();
   entryTimer = setTimeout(function() {
   flashBoard('fail');
@@ -100,7 +100,7 @@ function flashBoard(color) {
           restart();
           start();
         }
-      else setTimeout(function(){        
+      else setTimeout(function(){             
         playSequence(0);
     }, 1000);
     }, 1000);
