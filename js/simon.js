@@ -24,10 +24,10 @@ function start() {
 }
 
 function getSound(color){
-  if (color === 'red') return 'https://s3.amazonaws.com/freecodecamp/simonSound1.mp3';
-  if (color === 'green') return 'https://s3.amazonaws.com/freecodecamp/simonSound2.mp3';
-  if (color === 'blue') return 'https://s3.amazonaws.com/freecodecamp/simonSound3.mp3';
-  if (color === 'orange') return 'https://s3.amazonaws.com/freecodecamp/simonSound4.mp3';
+  if (color === 'red') return 'sound/simonSound1.mp3';
+  if (color === 'green') return 'sound/simonSound2.mp3';
+  if (color === 'blue') return 'sound/simonSound3.mp3';
+  if (color === 'orange') return 'sound/simonSound4.mp3';
   
 }
 
